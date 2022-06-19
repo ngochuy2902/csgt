@@ -1,0 +1,408 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/exceljs.min.js" charset="utf-8"></script>
+    <script src="js/file-saver.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+</head>
+<body>
+<form id="form">
+    <table id="gt">
+        <tr>
+            <th>STT</th>
+            <th colspan="3">Danh mục thống kê</th>
+            <th>Tổng số</th>
+            <th>Đường bộ</th>
+            <th>Đường thuỷ</th>
+        </tr>
+        <!--    I    -->
+        <tr>
+            <td colspan="7">I. TÌNH HÌNH KHÁC CÓ LIÊN QUAN</td>
+        </tr>
+        <!--    1    -->
+        <tr>
+            <td rowspan="4">1</td>
+            <td rowspan="4">Đua xe trái phép</td>
+            <td colspan="2">Số vụ</td>
+            <td>
+                <input id="dxtpSvTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="dxtpSvDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tạm giữ</td>
+            <td>Đối tượng</td>
+            <td>
+                <input id="dxtpTgDtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="dxtpTgDtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Ô tô</td>
+            <td>
+                <input id="dxtpTgOtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="dxtpTgOtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Mô tô</td>
+            <td>
+                <input id="dxtpTgMtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="dxtpTgMtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <!--    2    -->
+        <tr>
+            <td rowspan="4">2</td>
+            <td rowspan="4">Tụ tập chạy xe phòng nhanh, lạng lách, gây mất TTCC</td>
+            <td colspan="2">Số vụ</td>
+            <td>
+                <input id="ttcxSvTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttcxSvDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tạm giữ</td>
+            <td>Đối tượng</td>
+            <td>
+                <input id="ttcxTgDtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttcxTgDtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Ô tô</td>
+            <td>
+                <input id="ttcxTgOtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttcxTgOtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Mô tô</td>
+            <td>
+                <input id="ttcxTgMtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttcxTgMtDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <!--    3    -->
+        <tr>
+            <td rowspan="4">3</td>
+            <td rowspan="4">Chống lại Cảnh sát giao thông</td>
+            <td colspan="2">Số vụ</td>
+            <td>
+                <input id="clcsSvTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsSvDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsSvDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Hy sinh (Cán bộ chiến sỹ)</td>
+            <td>
+                <input id="clcsHsTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsHsDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsHsDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Bị thương (Cán bộ chiến sỹ)</td>
+            <td>
+                <input id="clcsBtTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsBtDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsBtDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Số đối tượng bị bắt</td>
+            <td>
+                <input id="clcsBbTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsBbDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="clcsBbDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <!--    II    -->
+        <tr>
+            <td colspan="7">II. CÔNG TÁC TUYÊN TRUYỀN</td>
+        </tr>
+        <!--    4    -->
+        <tr>
+            <td rowspan="7">4</td>
+            <td rowspan="7">Tuyên truyền, vận động</td>
+            <td colspan="2">Số nhà hàng, quán bar, vũ trường tuyên truyền, nhắc nhở khách hàng không điều khiển phương tiện giao thông sau khi đã uống rượu, bia.</td>
+            <td>
+                <input id="ttvdNnTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdNnDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td rowspan="5">CSGT tuyên truyền vận động chở hàng hoá đúng trọng tải thiết kế của xe, không cơi nới thùng xe, tháo, cắt thùng xe về đúng thiết kế đã được phê duyệt.</td>
+            <td>Doanh nghiệp</td>
+            <td>
+                <input id="ttvdXeDnTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdXeDnDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Cá nhân</td>
+            <td>
+                <input id="ttvdXeCnTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdXeCnDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Nhà máy</td>
+            <td>
+                <input id="ttvdXeNmTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdXeNmDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Chủ bến bãi</td>
+            <td>
+                <input id="ttvdXeCbbTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdXeCbbDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Xưởng cơ khí, sửa ô tô</td>
+            <td>
+                <input id="ttvdXeXckTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ttvdXeXckDb" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td colspan="2">Doanh nghiệp vận tải thuỷ, chủ bến bãi ký cam kết</td>
+            <td>
+                <input id="ttvdVttTs" type="text" placeholder="0">
+            </td>
+            <td>-</td>
+            <td>
+                <input id="ttvdVttDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <!--    III    -->
+        <tr>
+            <td colspan="7">III. KẾT QUẢ TTKS, XL VP TTATGT</td>
+        </tr>
+        <!--    5    -->
+        <tr>
+            <td rowspan="2">5</td>
+            <td rowspan="2">Tổng số CBCS tham gia TTKSGT trong ngày</td>
+            <td colspan="2">Số tổ tuần tra kiểm soát</td>
+            <td>
+                <input id="tscbStttTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tscbStttDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tscbStttDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Số lượt CBCS</td>
+            <td>
+                <input id="tscbSlttTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tscbSlttDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tscbSlttDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <!--    6    -->
+        <tr>
+            <td>6</td>
+            <td colspan="3">Số vi phạm lập biên bản</td>
+            <td>
+                <input id="svplbbTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="svplbbDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="svplbbDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <!--    7    -->
+        <tr>
+            <td>7</td>
+            <td colspan="3">Phạt tiền (triệu đồng)</td>
+            <td>
+                <input id="ptTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ptDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="ptDt" type="text" placeholder="0">
+            </td>
+        </tr>
+        <!--    8    -->
+        <tr>
+            <td>8</td>
+            <td colspan="3">Tước giấy phép lái xe, chứng chỉ chuyên môn</td>
+            <td>
+                <input id="tgplxTs" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tgplxDb" type="text" placeholder="0">
+            </td>
+            <td>
+                <input id="tgplxDt" type="text" placeholder="0">
+            </td>
+        </tr>
+    </table>
+    <button class="button" name="export" type="submit">Xuất excel</button>
+</form>
+<script>
+    const form = document.getElementById("form");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const dxtpSvSum = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpSvDb = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgDtTs = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgDtDb = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgOtTs = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgOtDb = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgMtTs = document.getElementById("dxtpSvTs").value || 0;
+      const dxtpTgMtDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxSvTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxSvDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgDtTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgDtDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgOtTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgOtDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgMtTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttcxTgMtDb = document.getElementById("dxtpSvTs").value || 0;
+      const clcsSvTs = document.getElementById("dxtpSvTs").value || 0;
+      const clcsSvDb = document.getElementById("dxtpSvTs").value || 0;
+      const clcsSvDt = document.getElementById("dxtpSvTs").value || 0;
+      const clcsHsTs = document.getElementById("dxtpSvTs").value || 0;
+      const clcsHsDb = document.getElementById("dxtpSvTs").value || 0;
+      const clcsHsDt = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBtTs = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBtDb = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBtDt = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBbTs = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBbDb = document.getElementById("dxtpSvTs").value || 0;
+      const clcsBbDt = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdNnTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdNnDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeDnTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeDnDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeCnTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeCnDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeNmTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeNmDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeCbbTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeCbbDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeXckTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdXeXckDb = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdVttTs = document.getElementById("dxtpSvTs").value || 0;
+      const ttvdVttDt = document.getElementById("dxtpSvTs").value || 0;
+      const tscbStttTs = document.getElementById("dxtpSvTs").value || 0;
+      const tscbStttDb = document.getElementById("dxtpSvTs").value || 0;
+      const tscbStttDt = document.getElementById("dxtpSvTs").value || 0;
+      const tscbSlttTs = document.getElementById("dxtpSvTs").value || 0;
+      const tscbSlttDb = document.getElementById("dxtpSvTs").value || 0;
+      const tscbSlttDt = document.getElementById("dxtpSvTs").value || 0;
+      const svplbbTs = document.getElementById("dxtpSvTs").value || 0;
+      const svplbbDb = document.getElementById("dxtpSvTs").value || 0;
+      const svplbbDt = document.getElementById("dxtpSvTs").value || 0;
+      const ptTs = document.getElementById("dxtpSvTs").value || 0;
+      const ptDb = document.getElementById("dxtpSvTs").value || 0;
+      const ptDt = document.getElementById("dxtpSvTs").value || 0;
+      const tgplxTs = document.getElementById("dxtpSvTs").value || 0;
+      const tgplxDb = document.getElementById("dxtpSvTs").value || 0;
+      const tgplxDt = document.getElementById("dxtpSvTs").value || 0;
+
+      const workbook = new ExcelJS.Workbook();
+
+      const worksheet =  workbook.addWorksheet('My Sheet', {
+        pageSetup:{paperSize: 9, orientation:'landscape'}
+      });
+
+      worksheet.columns = [
+        { header: 'Year', key: 'year', width: 12, style: {numFmt: "0000"}},
+        { header: 'Index', key: 'index', width: 15 },
+      ];
+
+      const firstRow = worksheet.getRow(1);
+      firstRow.font = { name: 'New Times Roman', family: 4, size: 12, bold: true};
+      firstRow.alignment = { vertical: 'middle', horizontal: 'center'};
+      firstRow.height = 20;
+
+      worksheet.addRow({year: 'John Doe', index: 'asd'});
+      worksheet.addRow({year: 'John AAA', index: 'asdasd'});
+
+      workbook.xlsx.writeBuffer().then((data) => {
+        const blob = new Blob([data], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
+        saveAs(blob, "huy.xlsx");
+      });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#gt {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table {
+    table-layout: auto;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 3px;
+    word-wrap: break-word;
+    max-width: 300px;
+}
+
+th {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #3875ff;
+    color: white;
+    word-wrap: break-word;
+    max-width: 300px;
+}
